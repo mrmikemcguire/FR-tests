@@ -3,13 +3,12 @@ import java.util.Collections;
 
 public class RemoveDuplicates
 	{
-
 	public static void main(String[] args)
 		{
 		removeDuplicates("moose");
 		}
 	
-	public static void removeDuplicates(String word)
+	public static ArrayList<String> removeDuplicates(String word)
 		{
 		ArrayList<String> a = new ArrayList<String>();
 		
@@ -30,8 +29,8 @@ public class RemoveDuplicates
 		
 		for (String s : a)
 			{
-			System.out.println(s);
+			System.out.print(s);
 			}
+		return a;
 		}
-
 	}
