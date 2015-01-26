@@ -3,17 +3,17 @@ import java.util.Collections;
 
 public class RemoveDuplicates
 	{
-	static ArrayList<Integer> al = new ArrayList<Integer>();
+	static ArrayList<Integer> myArray = new ArrayList<Integer>();
 
 	public static void main(String[] args)
 		{
-		al.add(1);
-		al.add(1);
-		al.add(2);
-		al.add(2);
-		al.add(3);
-		al.add(3);
-		removeDuplicates(al);
+		myArray.add(1);
+		myArray.add(1);
+		myArray.add(2);
+		myArray.add(2);
+		myArray.add(3);
+		myArray.add(3);
+		removeDuplicates(myArray);
 		}
 	
 	public static ArrayList<Integer> removeDuplicates(ArrayList a)
