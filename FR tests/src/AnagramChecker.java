@@ -4,7 +4,7 @@ public class AnagramChecker
 	{
 	public static void main(String[] args)
 		{
-		isAnagram("peach", "cheap");
+		isAnagram("peach", "cheAp");
 		}
 	
 	public static boolean isAnagram(String word1, String word2)

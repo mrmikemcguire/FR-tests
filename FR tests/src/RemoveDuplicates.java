@@ -8,16 +8,18 @@ public class RemoveDuplicates
 	public static void main(String[] args)
 		{
 		myArray.add(1);
-		myArray.add(1);
-		myArray.add(2);
 		myArray.add(2);
 		myArray.add(3);
+		myArray.add(1);
+		myArray.add(2);
 		myArray.add(3);
 		removeDuplicates(myArray);
 		}
 	
 	public static ArrayList<Integer> removeDuplicates(ArrayList a)
 		{
+		Collections.sort(a);
+		
 		for (int i = a.size() - 1; i > 0; i--)
 			{
 			if (a.get(i).equals(a.get(i - 1)))
