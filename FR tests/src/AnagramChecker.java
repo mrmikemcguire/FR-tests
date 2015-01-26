@@ -7,7 +7,7 @@ public class AnagramChecker
 		isAnagram("peach", "cheap");
 		}
 	
-	public static void isAnagram(String word1, String word2)
+	public static boolean isAnagram(String word1, String word2)
 		{
 		ArrayList<String> a = new ArrayList<String>();
 		ArrayList<String> b = new ArrayList<String>();
@@ -31,10 +31,12 @@ public class AnagramChecker
 		if (a.equals(b))
 			{
 			System.out.println("It's an anagram.");
+			return true;
 			}
 		else
 			{
 			System.out.println("It's not an anagram.");
+			return false;
 			}
 		}
 	}
